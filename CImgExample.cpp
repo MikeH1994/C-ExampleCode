@@ -18,6 +18,8 @@ void exampleImage() {
 		(*image)(x, y, 0, 1) = 250;
 		(*image)(x, y, 0, 2) = 250;
 	}
+
+	//image->_data = pointer to array;
 	image->display(*imageDisplay);
 	while (!imageDisplay->is_closed()) {
 		if (imageDisplay->is_keyT()) {
